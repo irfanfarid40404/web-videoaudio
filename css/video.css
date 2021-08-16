@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    border: none;
+}
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background: #fff;
+    padding: 1rem 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.1);
+}
+
+header .logo {
+    color: #ef233c;
+    font-size: 2rem;
+    font-weight: bolder;
+}
+header .logo span {
+    color: #4361ee;
+}
+header .search input {
+    padding: 5px 10px;
+    text-align: center;
+    font-size: 1rem;
+    border-radius: 25px;
+    border: 1px solid rgba(0,0,0,.5);
+    display: none;
+}
+
+.content-video {
+    margin: 6rem 2rem;
+    display: flex;
+}
+.content-video .box {
+    width: 70%;
+    margin: 0;
+}
+.content-video .box video{
+    width: 100%;
+}
+.content-video .heading {
+    margin: 15px 0;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #000;
+}
+
+.content-video .list {
+    display: block;
+    width: 30%;
+    margin-left: 2rem;
+}
+.content-video .list .video-list {
+    display: flex;
+}
+.content-video .list .video-list:nth-child(2) {
+    margin-top: 1rem;
+}
+.content-video .list .video-list img {
+    width: 180px;
+    height: 100%;
+}
+.content-video .list .video-list img:hover {
+    cursor: pointer;
+}
+.content-video .list .video-list .heading-list {
+    padding: 5px;
+}
+.content-video .list .video-list .heading-list p {
+    margin-top: 5px;
+}
+
+footer {
+    background: #2b2b2b;
+    padding: 2rem 2rem;
+    text-align: center;
+}
+footer .box h4 {
+    color: #fff;
+    font-weight: 600;
+    margin-bottom: .5rem;
+}
+footer .box a {
+    color: #fff;
+    margin-left: 1rem;
+}
+
+
+
+@media (max-width:1200px) {
+    html {
+        font-size: 65%;
+    }
+    .content-video {
+        min-height: 100vh;
+    }
+}
+@media (max-width:768px) {
+    .content-video {
+        display: block;
+        min-height: 100vh;
+    }
+    .content-video .box {
+        width: 100%;
+    }
+    .content-video .list {
+        width: 100%;
+        margin: 0;
+    }
+    .content-video .list .video-list img {
+        width: 150px;
+        height: 90px;
+    }
+}
+@media (max-width:450px) {
+    html {
+        font-size: 50%;
+    }
+    
+}
+@media (max-width:300px) {
+    .content-video .list .video-list img {
+        width: 100px;
+        height: 70px;
+    }
+}

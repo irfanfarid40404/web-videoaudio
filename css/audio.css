@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    border: none;
+}
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background: #fff;
+    padding: 1rem 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.1);
+}
+
+header .logo {
+    color: #ef233c;
+    font-size: 2rem;
+    font-weight: bolder;
+}
+header .logo span {
+    color: #4361ee;
+}
+header .search input {
+    padding: 5px 10px;
+    text-align: center;
+    font-size: 1rem;
+    border-radius: 25px;
+    border: 1px solid rgba(0,0,0,.5);
+    display: none;
+}
+
+.content-audio {
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+}
+.content-audio table {
+    border: .1rem solid rgba(0,0,0,.2);
+    border-collapse: collapse;
+    text-align: center;
+    width: 50%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    margin-top: 6rem;
+}
+.content-audio table td{
+    border: .1rem solid rgba(0,0,0,.5);
+}
+.content-audio table marquee {
+    padding: 5px;
+}
+.content-audio table img {
+    width: 100%;
+}
+.content-audio table audio {
+    width: 100%;
+    padding: 10px;
+}
+.content-audio table audio source {
+    background: transparent;
+}
+
+
+footer {
+    background: #2b2b2b;
+    padding: 2rem 2rem;
+    text-align: center;
+}
+footer .box h4 {
+    color: #fff;
+    font-weight: 600;
+    margin-bottom: .5rem;
+}
+footer .box a {
+    color: #fff;
+    margin-left: 1rem;
+}
+
+
+@media (max-width:1200px) {
+    html {
+        font-size: 65%;
+    }
+    .content-video {
+        min-height: 100vh;
+    }
+}
+@media (max-width:768px) {
+    .content-audio table {
+        width: 100%;
+    }
+}
+@media (max-width:450px) {
+    html {
+        font-size: 50%;
+    }
+    
+}
